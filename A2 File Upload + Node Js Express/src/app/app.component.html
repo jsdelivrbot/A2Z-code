@@ -1,0 +1,33 @@
+<br>//create a new Angular project without test files.
+<br>ng new ng-pwa --skip-tests
+
+<br> npm install -g express-generator
+<br>
+<br> cd angular-file
+<br> npm install
+<br>
+<br> node ./bin/www
+<br> nothing shows up go to browser and hit http://localhost:3000
+
+<br> npm install multer --save
+<br> in A2
+<br> npm i ng2-file-upload --save
+
+<h1>
+  <!-- here we echo the title from the component -->
+  {{title}}
+</h1>
+
+<!-- File input for the file-upload plugin, with special ng2-file-upload directive called ng2FileSelect -->
+<input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+<!-- button to trigger the file upload when submitted -->
+<button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+  Upload with ng-2 file uploader
+</button>
+
+<h3>Method 2</h3>
+<input id="photo" type="file" />
+<!-- button to trigger the file upload when submitted -->
+<button type="button" class="btn btn-success btn-s" (click)="upload()">
+  Upload with method 2
+</button>

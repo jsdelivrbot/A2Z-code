@@ -1,0 +1,38 @@
+<div (click)="onBackClick()" class="back-icon">
+  <app-back-icon></app-back-icon>
+</div>
+<span class="overlay"></span>
+<div class="container">
+  <div class="side1">
+    <h1 class="skill-header">ABOUT</h1>
+    <app-dp-logo height="13rem" width="13rem" class="dp-logo"></app-dp-logo>
+    <div class="text-container">
+      <p>
+        A Bachlor Of Engineer having 1.8 years of IT experience, currently working for Financial Technologies Ltd,
+        Mumbai as FullStack Software Developer
+        App development and now I am working with Angular 6,C# Web Api, Node.js, ASP.NET Core, React, AWS, Azure.
+      </p>
+      <br>
+      <p>
+        Keen to work on challenging assignments in Financial Applications, Enterprise Applications and further 
+        to maximize my
+        technical expertise to become “Solution Architect"
+      </p>
+      <br>
+      <p>
+        Apart from web development, I like IOT & play with Arduino, ESP8266/NodeMCU.
+      </p>
+    </div>
+  </div>
+  <div class="side2">
+    <div class="skill-container">
+      <h1 class="skill-header">
+        Skills
+      </h1>
+      <div *ngFor="let skill of skills">
+        <h4 class="skill-type">{{skill.type}}</h4>
+        <h4 class="skill-names">{{skill.names.join(', ')}}</h4>
+      </div>
+    </div>
+  </div>
+</div>

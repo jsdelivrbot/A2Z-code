@@ -1,0 +1,13 @@
+{
+  "siteUrl": "http://localhost:4200",
+  "serviceUrl": "http://localhost:53905",
+
+  "browserSupport": [],
+  "carosalConfig": [],
+  "supportDetails": {
+    "mobileNo": "9969351313",
+    "email": "career.gyt@gmail.com"
+  },
+  "logErrorOnConsoleFlag": "OFF",
+  "tickerInfo": []
+}

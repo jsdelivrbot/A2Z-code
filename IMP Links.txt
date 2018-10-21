@@ -1,0 +1,8 @@
+https://github.com/pkrawat1/awesome-angular-components#carousel
+
+
+https://www.linkedin.com/learning/building-complex-express-sites-with-redis-and-socket-io/course-overview
+
+https://www.linkedin.com/learning/learning-redis/hashes-in-action
+
+https://app.pluralsight.com/library/courses/paypal-integration-nodejs-express/table-of-contents

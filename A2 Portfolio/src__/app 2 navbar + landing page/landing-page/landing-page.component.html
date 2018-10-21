@@ -1,0 +1,48 @@
+<div class="overlay"></div>
+<div class="root-container">
+  <div class="navbar">
+    <div class="nav-items">
+      <a [routerLink]="['/portfolio']" class="nav-item">Portfolio</a>
+      <a [routerLink]="['/about']" class="nav-item">About & Skills</a>
+      <a [routerLink]="['/profiles']" class="nav-item">Profiles</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <app-dp-logo class="dp-logo"></app-dp-logo>
+<h4 class="short-bio">FullStack Software Engineer | Community Contributer</h4>
+
+    <q class="quote">I learn Everyday.</q>
+    <div class="name">
+      <p>
+        Gaurav Talele
+      </p>
+      <div class="strip"></div>
+    </div>
+
+<ul>
+  <li>I am having 1.8 years of IT experience in industry, currently working for Financial Technologies Ltd, Mumbai as FullStack Software
+    Engineer.</li>
+  <li>Proven experience in Software Development Life Cycle on technologies like Angular 6, WEB API, AWS (Amazon
+    Web Services), WCF, C#, D3.js and Databases MS SQL, Redis etc.</li>
+  <li>Proven experience in design and development of client-server architecture.</li>
+  <li>Good communication, interpersonal,Logical, mentoring and conflict resolving skills.</li>
+  <li>Good understanding on the Quality processes like CMM Level 5 and CMM Level 3. Implemented the same ongoing
+    projects.</li>
+  <li>Keen to work on challenging assignments</li>
+</ul>
+
+    <span (click)="onExploreMeClick()" (mouseover)="startTadaAnimation = false" [ngClass]="{'tada-animation':startTadaAnimation}">
+      <button class="special-btn">
+        <span>
+          Explore Me
+        </span>
+      </button>
+    </span>
+
+    <div class="stick">
+      <div class="stick-design"></div>
+    </div>
+  </div>
+
+</div>

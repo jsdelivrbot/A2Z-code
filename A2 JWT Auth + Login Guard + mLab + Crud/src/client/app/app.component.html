@@ -1,0 +1,28 @@
+{{title}}
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+
+<br>
+https://stackblitz.com/edit/angular-6-jwt-authentication-example?file=app%2F_helpers%2Fjwt.interceptor.ts
+
+<br>https://stackblitz.com/edit/angular-6-communicating-between-components-7hsega?file=app%2F_services%2Findex.ts
+
+
+<h3>This Project Arch Is like src --> Client --> app</h3><br>
+<h3>
+  <p> src --> Server --> index.js</p>
+</h3>
+<br>
+
+<h4>for above to happen i have made chanages in tsconfig.app.json--> "extends": "../../tsconfig.json"</h4>
+<br>
+<h4>and angular.json --> "sourceRoot": "src/client",</h4>
+
+
+<br> Jwt Structure
+<br>   Header --> algo + type
+<br>   payload --> iat (issueat) + expiry + username + role
+<br>   Structure --> encoded payload + encoded header with hmacsha256 algo with a secreat key
+
+
+

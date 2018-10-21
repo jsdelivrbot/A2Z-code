@@ -1,0 +1,17 @@
+{{title}}
+
+<ul>
+  <li *ngFor="let item of items | async">
+    {{ (item | async)?.email }}
+  </li>
+</ul>
+
+<div *ngIf="afAuth.user | async as user; else showLogin">
+  <h1>Hello {{ user.displayName }}!</h1>
+  <button (click)="logout()">Logout</button>
+</div>
+<ng-template #showLogin>
+  <p>Please login.</p>
+  <button (click)="login()">Login with Google</button>
+  <button (click)="createUser()">Create User</button>
+</ng-template>
