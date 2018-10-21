@@ -6,3 +6,9 @@ https://www.linkedin.com/learning/building-complex-express-sites-with-redis-and-
 https://www.linkedin.com/learning/learning-redis/hashes-in-action
 
 https://app.pluralsight.com/library/courses/paypal-integration-nodejs-express/table-of-contents
+
+https://app.pluralsight.com/library/courses/oauth-passport-securing-application/table-of-contents
+
+https://app.pluralsight.com/player?course=paypal-integration-nodejs-express&author=dallas-lones&name=paypal-integration-nodejs-express-m1&clip=1&mode=live
+
+https://app.pluralsight.com/library/courses/nodejs-express-web-applications-update/table-of-contents
