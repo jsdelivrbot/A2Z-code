@@ -1,0 +1,25 @@
+<router-outlet></router-outlet>
+
+<!-- 
+  this signifies parent to child communication 
+  here app behaves as a parent component
+-->
+<child [nameAsInput]="title"></child>
+
+<!-- 
+  this signifies child to parent communication 
+  here voter is an child component and vote-taker is a parent component
+-->
+<app-vote-taker></app-vote-taker>
+
+<!-- 
+  when parent class wants to call the child class methods and read and write the variables
+  then use ViewChild
+ -->
+ <parent></parent>
+
+ <!-- 
+  A parent component and its children share a service whose interface enables bi-directional communication within
+  the family.
+  -->
+
