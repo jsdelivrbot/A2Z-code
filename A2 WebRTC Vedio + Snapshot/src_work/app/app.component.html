@@ -1,0 +1,22 @@
+<div class="webrtc-demo-app">
+  <h1> Angular webRTC recorder demo app </h1>
+  <hr>
+
+  <div>
+    <h2> RtcMediaRecorderComponent in practice</h2>
+    <ng-rtc-media-recorder [constrains]="constrains"
+                           (startRecording)="announceStart($event)" (fetchRecording)="handleVideoStream($event)">
+    </ng-rtc-media-recorder>
+  </div>
+  <hr>
+  <div>
+    <h2> RtcMediaRecorderComponent (showVideoPlayer=false) </h2>
+    <ng-rtc-media-recorder [constrains]="constrains"
+                           [showVideoPlayer]="false"
+                           (startRecording)="announceStart($event)" (fetchRecording)="handleVideoStream($event)">
+    </ng-rtc-media-recorder>
+  </div>
+
+  <button (click)="takeSnap()" >Take Snap</button>
+  <hr>
+</div>
