@@ -12,3 +12,76 @@ https://app.pluralsight.com/library/courses/oauth-passport-securing-application/
 https://app.pluralsight.com/player?course=paypal-integration-nodejs-express&author=dallas-lones&name=paypal-integration-nodejs-express-m1&clip=1&mode=live
 
 https://app.pluralsight.com/library/courses/nodejs-express-web-applications-update/table-of-contents
+
+
+https://blog.angularindepth.com/the-angular-devops-series-ct-ci-with-travis-ci-and-github-pages-3c02664f078
+
+not understood
+https://blog.angularindepth.com/policy-based-client-side-encryption-in-angular-b47068b26d50
+
+=========================================Set and Get=============================
+
+@Component({...})
+export class DateComponent {
+  private _dateObject: Date;
+
+  @Input() set date(date: number) {
+    // assuming `date` is something like 1506439684321
+    this._dateObject = new Date(date);
+  }
+
+  get date() {
+    return `The date is ${this._dateObject}`;
+  }
+}
+______________________________________________________________________________________
+
+=====================Access parent Route params with Angular's Router=================
+
+export const ROUTES: Routes = [
+  {
+    path: '',
+    canActivate: [CoursesGuard],
+    component: CoursesComponent,
+  },
+  {
+    path: ':id',
+    canActivate: [CoursesGuard],
+    component: CourseComponent,
+    children: [
+      { path: '', redirectTo: 'metadata', pathMatch: 'full' },
+      { path: 'metadata', component: CourseMetadataComponent },
+      { path: 'curriculum', component: CourseCurriculumComponent },
+      { path: 'prices', component: CoursePricesComponent },
+      { path: 'coupons', component: CourseCouponsComponent },
+    ],
+  },
+];
+
+/admin/courses/1234/metadata
+
+now in CourseMetadataComponent 
+
+constructor(private router: ActivatedRoute) {}
+
+ngOnInit() {
+	this.router.parent.params.switchMap(params => { 
+		//1234
+	});
+}
+
+// not the parent, it's the current param
+this.router.params.switchMap(params => {
+  // do something with local "params"
+});
+
+
+
+
+
+
+
+
+
+______________________________________________________________________________________
+
